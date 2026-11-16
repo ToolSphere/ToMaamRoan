@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101b2b">
+    <title>Special Delivery — A Letter of Gratitude</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="experience" id="experience" data-phase="ready">
+        <header class="film-header">
+            <div><span class="star">✦</span> SPECIAL DELIVERY <span class="divider">/</span> A LETTER IN FLIGHT</div>
+            <span class="edition">A CINEMATIC LETTER FOR A SPECIAL PROFESSOR</span>
+        </header>
+
+        <section class="screen" id="screen" aria-label="An interactive cinematic paper airplane delivery">
+            <div class="sky-stage" id="skyStage" aria-hidden="true">
+                <!-- The moon is now rendered at a fixed location in the 3D world. -->
+                <div class="lens-glow"></div>
+            </div>
+            <div class="room" id="room">
+                <div class="wall-frame"></div>
+                <div class="room-aura"></div>
+                <button type="button" class="window" id="startWindow" aria-label="Open the window and launch the airplane">
+                    <span class="window-sky"><span class="window-sun"></span><span class="window-mountain"></span></span>
+                    <span class="window-panel panel-left"><i></i></span>
+                    <span class="window-panel panel-right"><i></i></span>
+                    <span class="window-border"></span>
+                    <span class="window-sill"></span>
+                </button>
+                <div class="floor"></div>
+            </div>
+            <canvas id="world" aria-label="A cinematic 3D paper airplane flight"></canvas>
+            <div class="cinema-bar top"></div>
+            <div class="cinema-bar bottom"></div>
+            <div class="chapter"><span id="chapterNumber">01 / 03</span><span id="chapterTitle">THE BEGINNING</span></div>
+            <div class="flight-caption" id="flightCaption" aria-hidden="true"></div>
+            <div class="window-instruction" id="windowInstruction">CLICK THE WINDOW TO SEND YOUR LETTER ↗</div>
+            <!-- This invisible hit area follows the ORIGINAL WebGL mailbox; no replacement model. -->
+            <button type="button" class="mailbox-target" id="mailboxTarget" disabled aria-label="Open the 3D mailbox and receive your letter"><span class="sr-only">Open mailbox</span></button>
+            <button type="button" class="mailbox-button" id="openMailbox" disabled>✉ &nbsp; CLICK THE MAILBOX TO OPEN</button>
+            <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+        </section>
+        <footer class="film-footer">
+            <div class="progress" aria-hidden="true"><span></span><span></span><span></span></div>
+            <p class="status" id="status" role="status" aria-live="polite">A little letter is ready for its journey.</p>
+            <button type="button" id="replay" class="replay">↺ &nbsp; REPLAY</button>
+        </footer>
+    </main>
+
+    <div class="letter-overlay" id="letterOverlay" hidden>
+        <div class="letter-backdrop" id="letterBackdrop"></div>
+        <article class="letter-paper" id="letterPaper" role="dialog" aria-modal="true" aria-labelledby="letterTitle" tabindex="-1">
+            <button type="button" class="close-letter" id="closeLetter" aria-label="Close letter">×</button>
+            <p class="overline">A LITTLE LETTER OF GRATITUDE</p>
+            <div class="ornament">✦ &nbsp; ♡ &nbsp; ✦</div>
+            <h1 id="letterTitle">Dear Professor,</h1>
+            <p>I would like to express my heartfelt gratitude for the time, patience, and knowledge you have shared with us in Web Systems and Technologies II.</p>
+            <p>Through your lessons, I've learned that programming is about more than writing HTML, CSS, and JavaScript. It also teaches us creativity, patience, and the determination to find solutions when things don't work the first time.</p>
+            <p>Each activity, challenge, and little breakthrough has helped us grow as students and as future IT professionals. Thank you for sharing your knowledge and being part of our journey.</p>
+            <p>May this little letter remind you that your hard work is appreciated, even in the moments when we forget to say it.</p>
+            <p class="thanks">Thank you for everything, Professor. ♡</p>
+            <p class="signature">With sincere gratitude,<br><strong>[Your Name]</strong><br>BSIT 2A</p>
+            <p class="bottom-line">DELIVERED WITH HTML, CSS, JAVASCRIPT & GRATITUDE</p>
+        </article>
+    </div>
+    <div id="webglError" class="error" hidden>3D graphics are unavailable on this device. You can still read the card. <button type="button" id="fallbackLetter">Read the letter</button></div>
+</body>
+</html>
