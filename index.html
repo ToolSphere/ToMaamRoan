@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
     <main class="experience" id="experience" data-phase="ready">
         <header class="film-header">
@@ -23,8 +25,10 @@
             <div class="room" id="room">
                 <div class="wall-frame"></div>
                 <div class="room-aura"></div>
-                <button type="button" class="window" id="startWindow" aria-label="Open the window and launch the airplane">
-                    <span class="window-sky"><span class="window-sun"></span><span class="window-mountain"></span></span>
+                <button type="button" class="window" id="startWindow"
+                    aria-label="Open the window and launch the airplane">
+                    <span class="window-sky"><span class="window-sun"></span><span
+                            class="window-mountain"></span></span>
                     <span class="window-panel panel-left"><i></i></span>
                     <span class="window-panel panel-right"><i></i></span>
                     <span class="window-border"></span>
@@ -35,12 +39,16 @@
             <canvas id="world" aria-label="A cinematic 3D paper airplane flight"></canvas>
             <div class="cinema-bar top"></div>
             <div class="cinema-bar bottom"></div>
-            <div class="chapter"><span id="chapterNumber">01 / 03</span><span id="chapterTitle">THE BEGINNING</span></div>
+            <div class="chapter"><span id="chapterNumber">01 / 03</span><span id="chapterTitle">THE BEGINNING</span>
+            </div>
             <div class="flight-caption" id="flightCaption" aria-hidden="true"></div>
             <div class="window-instruction" id="windowInstruction">CLICK THE WINDOW TO SEND YOUR LETTER ↗</div>
             <!-- This invisible hit area follows the ORIGINAL WebGL mailbox; no replacement model. -->
-            <button type="button" class="mailbox-target" id="mailboxTarget" disabled aria-label="Open the 3D mailbox and receive your letter"><span class="sr-only">Open mailbox</span></button>
-            <button type="button" class="mailbox-button" id="openMailbox" disabled>✉ &nbsp; CLICK THE MAILBOX TO OPEN</button>
+            <button type="button" class="mailbox-target" id="mailboxTarget" disabled
+                aria-label="Open the 3D mailbox and receive your letter"><span class="sr-only">Open
+                    mailbox</span></button>
+            <button type="button" class="mailbox-button" id="openMailbox" disabled>✉ &nbsp; CLICK THE MAILBOX TO
+                OPEN</button>
             <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
         </section>
         <footer class="film-footer">
@@ -52,7 +60,8 @@
 
     <div class="letter-overlay" id="letterOverlay" hidden>
         <div class="letter-backdrop" id="letterBackdrop"></div>
-        <article class="letter-paper" id="letterPaper" role="dialog" aria-modal="true" aria-labelledby="letterTitle" tabindex="-1">
+        <article class="letter-paper" id="letterPaper" role="dialog" aria-modal="true" aria-labelledby="letterTitle"
+            tabindex="-1">
             <div class="page-stack" id="pageStack">
                 <div class="page-topline">
                     <span class="page-label">SPECIAL DELIVERY &nbsp; / &nbsp; FOR MA'AM ROAN</span>
@@ -65,29 +74,41 @@
                             <p class="page-eyebrow">CHAPTER ONE &nbsp;·&nbsp; A LETTER FROM THE HEART</p>
                             <div class="page-decoration">✦ &nbsp; ♡ &nbsp; ✦</div>
                             <h1 id="letterTitle">Dear Ma'am Roan,</h1>
-                            <p>Some messages feel a little too important for an ordinary text. So I thought I'd send mine the way we've learned to create things: with a little HTML, a little CSS, a little JavaScript, and a whole lot of gratitude.</p>
-                            <p>Thank you for guiding us through Web Systems and Technologies II. From our first lines of code to the moments when something finally works, every activity has been another chance to think, create, and improve.</p>
-                            <p>There may be missing semicolons, stubborn bugs, and designs that don't look right on the first try, but those little challenges remind me that learning happens one attempt at a time.</p>
-                            <p class="handwritten-line">And sometimes, the best lessons stay with us long after the screen is closed.</p>
+                            <p>Some messages feel a little too important for an ordinary text. So I thought I'd send
+                                mine the way we've learned to create things: with a little HTML, a little CSS, a little
+                                JavaScript, and a whole lot of gratitude.</p>
+                            <p>Thank you for guiding us through Web Systems and Technologies II. From our first lines of
+                                code to the moments when something finally works, every activity has been another chance
+                                to think, create, and improve.</p>
+                            <p>There may be missing semicolons, stubborn bugs, and designs that don't look right on the
+                                first try, but those little challenges remind me that learning happens one attempt at a
+                                time.</p>
+                            <p class="handwritten-line">And sometimes, the best lessons stay with us long after the
+                                screen is closed.</p>
                             <p class="letter-salutation">With appreciation,<br><strong>A grateful student ♡</strong></p>
                         </div>
                     </section>
 
-                    <section class="letter-page" data-page="1" aria-label="An original poem about our subject" aria-hidden="true" inert>
+                    <section class="letter-page" data-page="1" aria-label="An original poem about our subject"
+                        aria-hidden="true" inert>
                         <div class="page-content poem-page">
                             <p class="page-eyebrow">CHAPTER TWO &nbsp;·&nbsp; LINES THAT MEAN MORE</p>
                             <h2>Between the Lines of Code</h2>
                             <p class="poem-intro">An original little poem for the lessons we've learned.</p>
                             <div class="poem-paper">
-                                <p>Between the tags, a story grows,<br>Through every line, a new idea shows.<br>When broken scripts refuse to run,<br>We try once more till work is done.</p>
-                                <p>A simple click, a page takes flight,<br>A hidden thought comes into sight.<br>With every bug we learn to mend,<br>There's something new around the bend.</p>
-                                <p>And through the lessons, day by day,<br>You help us find a brighter way.<br>For more than code is what we see—<br>We're learning who we're meant to be.</p>
+                                <p>Between the tags, a story grows,<br>Through every line, a new idea shows.<br>When
+                                    broken scripts refuse to run,<br>We try once more till work is done.</p>
+                                <p>A simple click, a page takes flight,<br>A hidden thought comes into sight.<br>With
+                                    every bug we learn to mend,<br>There's something new around the bend.</p>
+                                <p>And through the lessons, day by day,<br>You help us find a brighter way.<br>For more
+                                    than code is what we see—<br>We're learning who we're meant to be.</p>
                             </div>
                             <p class="poem-foot">Not everything meaningful needs to be compiled. ♡</p>
                         </div>
                     </section>
 
-                    <section class="letter-page" data-page="2" aria-label="Programming jokes part one" aria-hidden="true" inert>
+                    <section class="letter-page" data-page="2" aria-label="Programming jokes part one"
+                        aria-hidden="true" inert>
                         <div class="page-content joke-page">
                             <p class="page-eyebrow">CHAPTER THREE &nbsp;·&nbsp; A LITTLE LAUGHTER</p>
                             <h2>Debugging Our Smiles</h2>
@@ -112,7 +133,8 @@
                         </div>
                     </section>
 
-                    <section class="letter-page" data-page="3" aria-label="Programming jokes part two" aria-hidden="true" inert>
+                    <section class="letter-page" data-page="3" aria-label="Programming jokes part two"
+                        aria-hidden="true" inert>
                         <div class="page-content joke-page">
                             <p class="page-eyebrow">CHAPTER FOUR &nbsp;·&nbsp; MORE CONSOLE LAUGHTER</p>
                             <h2>Just One More Bug...</h2>
@@ -137,30 +159,42 @@
                         </div>
                     </section>
 
-                    <section class="letter-page" data-page="4" aria-label="Words of appreciation for Ma'am Roan" aria-hidden="true" inert>
+                    <section class="letter-page" data-page="4" aria-label="Words of appreciation for Ma'am Roan"
+                        aria-hidden="true" inert>
                         <div class="page-content qualities-page">
                             <p class="page-eyebrow">CHAPTER FIVE &nbsp;·&nbsp; WORDS THAT MATTER</p>
                             <h2>For Ma'am Roan</h2>
                             <p class="page-intro">A few words to express how grateful I am for a teacher's guidance.</p>
                             <div class="quality-grid">
-                                <div class="quality-note"><span>01</span><strong>Dedicated</strong><small>For the time you share</small></div>
-                                <div class="quality-note"><span>02</span><strong>Patient</strong><small>For every chance to learn</small></div>
-                                <div class="quality-note"><span>03</span><strong>Encouraging</strong><small>For helping us keep trying</small></div>
-                                <div class="quality-note"><span>04</span><strong>Inspiring</strong><small>For the possibilities ahead</small></div>
+                                <div class="quality-note"><span>01</span><strong>Dedicated</strong><small>For the time
+                                        you share</small></div>
+                                <div class="quality-note"><span>02</span><strong>Patient</strong><small>For every chance
+                                        to learn</small></div>
+                                <div class="quality-note"><span>03</span><strong>Encouraging</strong><small>For helping
+                                        us keep trying</small></div>
+                                <div class="quality-note"><span>04</span><strong>Inspiring</strong><small>For the
+                                        possibilities ahead</small></div>
                             </div>
-                            <p class="qualities-closing">Not every lesson fits inside a module. Some are found in the people who teach it.</p>
+                            <p class="qualities-closing">Not every lesson fits inside a module. Some are found in the
+                                people who teach it.</p>
                         </div>
                     </section>
 
-                    <section class="letter-page" data-page="5" aria-label="Final thank-you letter" aria-hidden="true" inert>
+                    <section class="letter-page" data-page="5" aria-label="Final thank-you letter" aria-hidden="true"
+                        inert>
                         <div class="page-content final-page">
                             <p class="page-eyebrow">THE FINAL PAGE &nbsp;·&nbsp; WITH ALL MY THANKS</p>
                             <div class="final-heart" aria-hidden="true">♡</div>
                             <h2>Thank You, Ma'am Roan.</h2>
-                            <p>At the end of this little journey, there's something I really want you to know: your time, your effort, and the knowledge you share are appreciated.</p>
-                            <p>What may be an ordinary class day to a teacher can become a meaningful turning point for a student. The skills we're building now are things we'll carry into future projects, challenges, and opportunities.</p>
-                            <p>I hope this small electronic card brings you a smile, just as learning something new brings us one.</p>
-                            <p class="final-quote">“The most meaningful things we create aren't always programs. Sometimes, they're moments of gratitude.”</p>
+                            <p>At the end of this little journey, there's something I really want you to know: your
+                                time, your effort, and the knowledge you share are appreciated.</p>
+                            <p>What may be an ordinary class day to a teacher can become a meaningful turning point for
+                                a student. The skills we're building now are things we'll carry into future projects,
+                                challenges, and opportunities.</p>
+                            <p>I hope this small electronic card brings you a smile, just as learning something new
+                                brings us one.</p>
+                            <p class="final-quote">“The most meaningful things we create aren't always programs.
+                                Sometimes, they're moments of gratitude.”</p>
                             <div class="final-signature">
                                 <span>With heartfelt gratitude,</span>
                                 <strong>[Your Name]</strong>
@@ -171,16 +205,20 @@
                     </section>
                 </div>
                 <nav class="page-navigation" aria-label="Letter page navigation">
-                    <button type="button" class="page-arrow" id="prevPage" disabled aria-label="Previous page"><span aria-hidden="true">←</span> Previous</button>
+                    <button type="button" class="page-arrow" id="prevPage" disabled aria-label="Previous page"><span
+                            aria-hidden="true">←</span> Previous</button>
                     <div class="page-dots" id="pageDots" aria-hidden="true">
                         <span class="active"></span><span></span><span></span><span></span><span></span><span></span>
                     </div>
-                    <button type="button" class="page-arrow next-arrow" id="nextPage" aria-label="Next page">Next <span aria-hidden="true">→</span></button>
+                    <button type="button" class="page-arrow next-arrow" id="nextPage" aria-label="Next page">Next <span
+                            aria-hidden="true">→</span></button>
                 </nav>
             </div>
             <span class="page-announcer sr-only" id="pageAnnouncer" aria-live="polite">Page 1 of 6</span>
         </article>
     </div>
-    <div id="webglError" class="error" hidden>3D graphics are unavailable on this device. You can still read the card. <button type="button" id="fallbackLetter">Read the letter</button></div>
+    <div id="webglError" class="error" hidden>3D graphics are unavailable on this device. You can still read the card.
+        <button type="button" id="fallbackLetter">Read the letter</button></div>
 </body>
+
 </html>
